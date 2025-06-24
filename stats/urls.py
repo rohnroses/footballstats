@@ -14,7 +14,7 @@ urlpatterns = [
     path('players/<int:pk>/', PlayerRetrieveUpdateDestroyAPIView.as_view(), name='player-detail'),
 
     path('tournament', TournamentListCreateAPIView.as_view(), name='tournament-list-create'),
-    path('players/<int:pk>/',TournamentRetrieveUpdateDestroyAPIView.as_view(), name='tournament-detail'),
+    path('tournaments/<int:pk>/',TournamentRetrieveUpdateDestroyAPIView.as_view(), name='tournament-detail'),
 
     path('match', MatchListCreateAPIView.as_view(), name='match-list-create'),
     path('match', MatchRetrieveUpdateDestroyAPIView.as_view, name='match-detail')
